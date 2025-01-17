@@ -58,7 +58,7 @@ There are two methods to get Postgres running locally.
 ### 🐳 **Option 2: Run Postgres and PGAdmin in Docker**
 
 - Install Docker Desktop from **[here](https://www.docker.com/products/docker-desktop/)**.
-- Copy **`example.env`** to **`.env`**:
+- Copy **`example.env`** to **`.env`**: > Genera un copia del archivo example.env y lo llama .env.Recuerda que esto funciona en power >
     
     ```bash
     cp example.env .env

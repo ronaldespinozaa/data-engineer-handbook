@@ -2,13 +2,13 @@ services:
   postgres:
     image: postgres:14
     restart: on-failure
-    container_name: ${DOCKER_CONTAINER}
+    container_name: postgres  #${DOCKER_CONTAINER}  #Es el nombre del contenedor que se tiene que levantar y que debe ir en postgres. También llamado hostname
     env_file:
       - .env
     environment:
-      - POSTGRES_DB=${POSTGRES_SCHEMA}
-      - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=postgres # ${POSTGRES_SCHEMA}
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
     ports:
       - "${HOST_PORT}:5432"
     volumes:
